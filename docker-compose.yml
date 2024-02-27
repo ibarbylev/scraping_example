@@ -1,0 +1,10 @@
+version: '2'
+services:
+  chrome:
+    image: selenium/standalone-chrome:3.141.59
+    volumes:
+      - /dev/shm:/dev/shm
+    ports:
+      - '127.0.0.1:4444:4444'
+    restart: always
+    mem_limit: 700M
